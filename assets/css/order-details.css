@@ -1,0 +1,194 @@
+    .order-details-section {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 48px 16px;
+    }
+
+    .order-details-header {
+        margin-bottom: 32px;
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .order-details-label {
+        margin: 0;
+        color: #6b7280;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: uppercase;
+        letter-spacing: 0.25em;
+    }
+
+    .order-details-title {
+        margin: 12px 0 0;
+        color: #030712;
+        font-size: 30px;
+        line-height: 1.2;
+        font-weight: 700;
+        letter-spacing: -0.025em;
+    }
+
+    .order-status {
+        display: inline-block;
+        width: fit-content;
+        padding: 4px 12px;
+        border-radius: 9999px;
+        background: #dcfce7;
+        color: #15803d;
+        font-size: 14px;
+        font-weight: 600;
+        text-transform: capitalize;
+    }
+
+    .order-details-grid {
+        display: grid;
+        gap: 32px;
+    }
+
+    .order-items {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .order-item {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        padding: 16px;
+        background: #ffffff;
+        border: 1px solid #e5e7eb;
+        border-radius: 16px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .order-item-image {
+        width: 100%;
+        height: 96px;
+        object-fit: cover;
+        border-radius: 16px;
+    }
+
+    .order-item-no-image {
+        width: 100%;
+        height: 96px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: #e5e7eb;
+        color: #6b7280;
+        font-size: 12px;
+        border-radius: 16px;
+    }
+
+    .order-item-content {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    .order-item-name {
+        margin: 0;
+        color: #111827;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    .order-item-quantity {
+        margin: 4px 0 0;
+        color: #6b7280;
+        font-size: 14px;
+    }
+
+    .order-item-price {
+        margin: 0;
+        color: #111827;
+        font-size: 18px;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    .order-summary {
+        padding: 24px;
+        background: #f9fafb;
+        border: 1px solid #e5e7eb;
+        border-radius: 24px;
+        box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+
+    .order-summary-title {
+        margin: 0;
+        color: #111827;
+        font-size: 20px;
+        font-weight: 600;
+    }
+
+    .order-summary-details {
+        margin-top: 24px;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        color: #4b5563;
+        font-size: 14px;
+    }
+
+    .order-summary-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+    }
+
+    .order-summary-total {
+        margin-top: 24px;
+        padding-top: 16px;
+        border-top: 1px solid #e5e7eb;
+    }
+
+    .order-total-row {
+        display: flex;
+        justify-content: space-between;
+        gap: 16px;
+        color: #111827;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    @media (min-width: 640px) {
+        .order-details-section {
+            padding-left: 24px;
+            padding-right: 24px;
+        }
+
+        .order-details-header {
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+
+        .order-item {
+            flex-direction: row;
+        }
+
+        .order-item-image,
+        .order-item-no-image {
+            width: 96px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+        .order-details-section {
+            padding-left: 32px;
+            padding-right: 32px;
+        }
+
+        .order-details-title {
+            font-size: 30px;
+        }
+
+        .order-details-grid {
+            grid-template-columns: 1.3fr 0.7fr;
+        }
+    }
