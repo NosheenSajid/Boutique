@@ -291,7 +291,7 @@ The default configuration enables PHP error display for local development. Do no
 - No automated test suite or deployment pipeline is currently included.
 - Additional review and hardening are required before handling real customer data or public production traffic.
 
-## Devoloper
+## Developer
  Nosheen Sajid
 
 ## License
