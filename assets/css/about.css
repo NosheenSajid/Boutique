@@ -1,0 +1,222 @@
+
+
+/* =========================================
+   ABOUT PAGE
+========================================= */
+
+.about-page {
+    width: 100%;
+    padding: 48px 16px;
+    box-sizing: border-box;
+    background: #ffffff;
+}
+
+.about-container {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* =========================================
+   HERO SECTION
+========================================= */
+
+.about-hero {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+    align-items: center;
+}
+
+/* =========================================
+   HERO CONTENT
+========================================= */
+
+.about-content {
+    min-width: 0;
+}
+
+.about-eyebrow {
+    margin: 0;
+    color: #6b7280;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.5;
+    letter-spacing: 0.25em;
+    text-transform: uppercase;
+}
+
+.about-content h1 {
+    margin: 16px 0 0;
+    color: #111827;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 1.15;
+    letter-spacing: -0.025em;
+}
+
+.about-content p {
+    margin: 0;
+    color: #4b5563;
+    font-size: 16px;
+    line-height: 1.75;
+}
+
+.about-description {
+    margin-top: 24px !important;
+}
+
+.about-description + .about-description {
+    margin-top: 16px !important;
+}
+
+/* =========================================
+   HERO IMAGE / PLACEHOLDER
+========================================= */
+
+.about-image-wrapper {
+    padding: 32px;
+    box-sizing: border-box;
+    border-radius: 24px;
+    background: #f3f4f6;
+    min-width: 0;
+}
+
+.about-image {
+    display: block;
+    width: 100%;
+    min-height: 400px;
+    aspect-ratio: 4 / 5;
+    border-radius: 24px;
+    background-color: #e5e7eb;
+    background-image: url("https://images.unsplash.com/photo-1546213290-e1b492ab3eee?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* =========================================
+   STATISTICS SECTION
+========================================= */
+
+.about-stats {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 64px;
+}
+
+/* =========================================
+   STAT CARD
+========================================= */
+
+.about-stat-card {
+    padding: 24px;
+    box-sizing: border-box;
+    border: 1px solid #e5e7eb;
+    border-radius: 16px;
+    background: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.about-stat-number {
+    margin: 0;
+    color: #111827;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.about-stat-label {
+    margin: 8px 0 0;
+    color: #4b5563;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1024px) {
+
+    .about-hero {
+        gap: 32px;
+    }
+
+    .about-content h1 {
+        font-size: 36px;
+    }
+
+    .about-stats {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 640px) {
+
+    .about-page {
+        padding: 32px 16px;
+    }
+
+    .about-hero {
+        grid-template-columns: 1fr;
+        gap: 32px;
+    }
+
+    .about-content h1 {
+        margin-top: 12px;
+        font-size: 32px;
+    }
+
+    .about-description {
+        margin-top: 20px !important;
+    }
+
+    .about-image-wrapper {
+        padding: 20px;
+        border-radius: 18px;
+    }
+
+    .about-image {
+        border-radius: 18px;
+    }
+
+    .about-stats {
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-top: 48px;
+    }
+
+    .about-stat-card {
+        padding: 20px;
+    }
+}
+
+/* =========================================
+   VERY SMALL MOBILE
+========================================= */
+
+@media (max-width: 400px) {
+
+    .about-page {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .about-content h1 {
+        font-size: 28px;
+    }
+
+    .about-content p {
+        font-size: 15px;
+    }
+
+    .about-image-wrapper {
+        padding: 16px;
+    }
+}
